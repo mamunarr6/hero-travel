@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap'); */
 
 * {
     margin: 0;
@@ -6,6 +6,10 @@
     box-sizing: border-box;
     font-family: "Mulish", sans-serif;
 }
+
+/* html {
+    color: #fff;
+} */
 
 li {
     list-style: none;
@@ -19,18 +23,48 @@ a {
     color: #FF5400;
 }
 
-/* Header Style */
-.nav-header {
+.center {
     width: 1170px;
     margin: auto;
+    margin-top: 2.5rem;
+}
+
+.color-btn {
+    width: 174px;
+    background-color: #FF5400;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.white-btn {
+    width: 174px;
+    background-color: #fff;
+    color: rgba(19, 19, 24, 0.50);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Header Style */
+header {}
+
+.nav-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
 }
 
 .hero-travel-icon {
-    width: 49%;
+    width: 50%;
     display: flex;
     align-items: center;
     font-size: 2rem;
@@ -49,13 +83,147 @@ a {
 }
 
 nav {
-    width: 49%;
+    width: 50%;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
     font-weight: 700;
+}
+
+nav ul li {
+    color: #000;
+}
+
+/* banner header style */
+.banner-header {
+    width: 1170px;
+    min-height: 80vh;
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.banner-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-header h1 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: normal;
+    font-style: normal;
+}
+
+.banner-header p {
+    color: #eeeeee;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.banner-header-button-row {
+    display: inline-flex;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 16px;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Our Popular Tours Styles */
+.popular-tours {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    margin-top: 4rem;
+    color: #000;
+}
+
+.popular-tours-info h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #131318;
+    margin-bottom: 30px;
+}
+
+.popular-tours-info p {
+    color: rgba(19, 19, 24, 0.70);
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.popular-tours-info ul li {
+    color: rgba(19, 19, 24, 0.70);
+    list-style-type: disc;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 26px;
+    margin-left: 16px;
+}
+
+/* Choose Your Destination Styles */
+.your-destination h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #131318;
+    margin-bottom: 20px;
+}
+
+.your-destination p {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.first-destinations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.second-destinations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.third-destinations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.relative {
+    position: relative;
+}
+
+.relative h3 {
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 800;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 45%;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
